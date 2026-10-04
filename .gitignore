@@ -1,0 +1,29 @@
+# 凭据和个人配置
+.env
+.env.*
+*.key
+*.pem
+*credentials*
+*secret*
+*profile*
+
+# 用户资料、输入输出和运行痕迹
+data/
+fixtures/
+results/
+outputs/
+runtime/
+.runtime/
+logs/
+*.log
+*.jsonl
+*.xlsx
+*.xls
+*.docx
+*.pdf
+
+# 本地依赖和 Python 缓存
+node_modules/
+__pycache__/
+*.py[cod]
+PUBLIC_UPLOAD_REPORT.md

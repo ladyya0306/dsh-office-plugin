@@ -1,0 +1,60 @@
+{
+  "name": "dsh-office-workflows",
+  "version": "0.3.0-rc.7",
+  "private": true,
+  "type": "module",
+  "main": "./src/product_entry.mjs",
+  "exports": {
+    ".": "./src/product_entry.mjs",
+    "./client": "./src/product_client.js",
+    "./package.json": "./package.json",
+    "./locale/*": "./locale/*"
+  },
+  "description": "办公程序复用与精确填报：保存成功程序，复用处理办法，独立核对产物。",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ladyya0306/dsh-office-plugin"
+  },
+  "keywords": [
+    "dsh-plugin",
+    "office",
+    "excel"
+  ],
+  "engines": {
+    "dsh": "0.2.0-rc.2"
+  },
+  "dsh": {
+    "manifestVersion": 1,
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    },
+    "client": {
+      "platform": "web",
+      "inject": [
+        "@deepseek-ai/dsh-client-locale",
+        "@deepseek-ai/dsh-client-ui-settings",
+        "@deepseek-ai/dsh-client-ui-plugin-manager"
+      ]
+    }
+  },
+  "peerDependencies": {
+    "@deepseek-ai/dsh-tools": "0.2.0-rc.2",
+    "@deepseek-ai/schemastery": "~3.18.4",
+    "@deepseek-ai/cosmokit": "~1.8.5",
+    "zod": "^4.0.0"
+  },
+  "peerDependenciesMeta": {
+    "@deepseek-ai/dsh-tools": {
+      "optional": true
+    },
+    "@deepseek-ai/schemastery": {
+      "optional": true
+    },
+    "@deepseek-ai/cosmokit": {
+      "optional": true
+    },
+    "zod": {
+      "optional": true
+    }
+  }
+}

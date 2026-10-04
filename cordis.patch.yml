@@ -1,0 +1,13 @@
+- insert:
+    - id: office-workflows
+      name: dsh-office-workflows
+      disabled: true
+      config:
+        workspaceRoot: ""
+        pythonPath: ""
+        methodDirectory: ""
+        nativeStateDirectory: ""
+        workspaceMode: session
+        nativeScriptMode: disabled
+        learningEnabled: false
+        outputCheckTools: true
